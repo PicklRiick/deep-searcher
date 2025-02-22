@@ -1,8 +1,8 @@
 provide_settings:
   llm:
-    provider: "OpenAI"
-    config:
-      model: "gpt-4o-mini"  # "gpt-o1-mini"
+##    provider: "OpenAI"
+##    config:
+##      model: "gpt-4o-mini"  # "gpt-o1-mini"
 #      api_key: "sk-xxxx"  # Uncomment to override the `OPENAI_API_KEY` set in the environment variable
 #      base_url: ""
 
@@ -29,6 +29,19 @@ provide_settings:
 #      api_version: ""
 ##      azure_endpoint: "xxxx"  # Uncomment to override the `AZURE_OPENAI_ENDPOINT` set in the environment variable
 ##      api_key: "xxxx"  # Uncomment to override the `AZURE_OPENAI_KEY` set in the environment variable
+
+#    provider: "Ali_Deepseek"
+#    config:
+#      model: "deepseek-v3"
+#      api_version: ""
+##      azure_endpoint: "xxxx"  # Uncomment to override the `AZURE_OPENAI_ENDPOINT` set in the environment variable
+##      api_key: "xxxx"  # Uncomment to override the `AZURE_OPENAI_KEY` set in the environment variable
+
+    provider: "Ali_Deepseek"
+    config:
+      model: "deepseek-v3"
+      api_key: "sk-9843cc823dc64ae6bab26c21314875cd"  # Uncomment to override the `SILICONFLOW_API_KEY` set in the environment variable
+      base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 
   embedding:
     provider: "MilvusEmbedding"
